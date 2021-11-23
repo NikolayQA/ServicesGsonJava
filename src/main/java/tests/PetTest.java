@@ -36,13 +36,6 @@ public class PetTest {
         pet.setName("Lassy");
         pet.setAge(5);
         System.out.println(GSON.toJson(pet));
-        //Creating new instance of OwnerData
-        OwnerData ivanData = new OwnerData("Ivan", "Mladost 4");
-        System.out.println(GSON.toJson(ivanData));
 
-        String jsonData = "{\"name\": \"Ivan\"}";
-        System.out.println("Json data:" + jsonData);
-        Data deserializedData = GSON.fromJson(jsonData, Data.class);
-        System.out.println("The name of the person is:" + deserializedData.getName());
     }
 }
